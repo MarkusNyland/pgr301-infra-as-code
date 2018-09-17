@@ -20,5 +20,10 @@ resource "github_team_membership" "minimarker" {
   username = "minimarker"
   role     = "member"
 }
+resource "github_team_membership" "kleppa" {
+  team_id  = "${github_team.theclass.id}"
+  username = "kleppa"
+  role     = "member"
+}
 
 
