@@ -12,11 +12,6 @@ jobs:
       command: apply
       directories: |
           .
-  - task: add_state
-    params:
-      github_token: ((github_token))
-    file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
-  - put: pgr301-infra-as-code
 
 resources:
 
