@@ -51,6 +51,11 @@ resource "github_team_membership" "husmas15" {
   role     = "member"
 }
 
+
+resource "github_team_membership" "Mr-Hagen" {
+  team_id  = "${github_team.theclass.id}"
+  username = "Mr-Hagen"
+
 resource "github_team_membership" "MarkusNyland" {
   team_id  = "${github_team.theclass.id}"
   username = "MarkusNyland"
