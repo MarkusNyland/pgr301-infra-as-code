@@ -12,6 +12,9 @@ jobs:
       command: apply
       directories: |
           .
+  - task: add_state
+    file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
+  - put: pgr301-infra-as-code
 
 resources:
 
