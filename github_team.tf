@@ -31,12 +31,12 @@ resource "github_team_membership" "synend16" {
   team_id  = "${github_team.theclass.id}"
   username = "synend16"
 }
+
 resource "github_team_membership" "christianthorby" {
   team_id  = "${github_team.theclass.id}"
   username = "christianthorby"
   role     = "member"
 }
-
 
 resource "github_team_membership" "perness" {
   team_id = "${github_team.theclass.id}"
@@ -81,4 +81,4 @@ resource "github_team_membership" "MarkusNyland" {
   team_id  = "${github_team.theclass.id}"
   username = "MarkusNyland"
   role     = "member"
-}
+
