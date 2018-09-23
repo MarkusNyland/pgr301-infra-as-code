@@ -21,8 +21,38 @@ resource "github_team_membership" "minimarker" {
   role     = "member"
 }
 
+
 resource "github_team_membership" "joakimej" {
   team_id  = "${github_team.theclass.id}"
   username = "joakimej"
+
+
+resource "github_team_membership" "Rosso" {
+  team_id  = "${github_team.theclass.id}"
+  username = "Rosso84"
+  role     = "member"
+}
+
+resource "github_team_membership" "andreasholteritter" {
+  team_id  = "${github_team.theclass.id}"
+  username = "andreasholteritter"
+  role     = "member"
+}
+
+resource "github_team_membership" "gabtho15" {
+  team_id  = "${github_team.theclass.id}"
+  username = "gabtho15"
+  role     = "member"
+}
+
+resource "github_team_membership" "husmas15" {
+  team_id  = "${github_team.theclass.id}"
+  username = "husmas15"
+  role     = "member"
+}
+
+resource "github_team_membership" "MarkusNyland" {
+  team_id  = "${github_team.theclass.id}"
+  username = "MarkusNyland"
   role     = "member"
 }
