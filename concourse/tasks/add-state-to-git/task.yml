@@ -10,6 +10,9 @@ inputs:
 - name: terraform
 - name: source
 
+outputs:
+- name: modified-source
+
 params:
   github_token: ((github_token))
 

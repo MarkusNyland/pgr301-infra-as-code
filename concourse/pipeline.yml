@@ -18,6 +18,9 @@ jobs:
     file: pgr301-infra-as-code/concourse/tasks/add-state-to-git/task.yml
     input_mapping: {source: pgr301-infra-as-code}
   - put: pgr301-infra-as-code
+    params:
+      repository: bumped-source/
+      rebase: true
 
 resources:
 
