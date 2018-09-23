@@ -15,5 +15,12 @@ outputs:
 caches:
 - path: terraform-cache
 
+params:
+  command:
+  directories:
+  cache: "false"
+  lock_timeout: 5m
+  github_token: ((github_token))
+
 run:
   path: source/concourse/tasks/terraform/terraform.sh
