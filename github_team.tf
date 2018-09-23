@@ -22,6 +22,12 @@ resource "github_team_membership" "minimarker" {
 }
 
 
+resource "github_team_membership" "perness" {
+  team_id = "${github_team.theclass.id}"
+  username = "perness"
+  role = "member"
+
+
 resource "github_team_membership" "joakimej" {
   team_id  = "${github_team.theclass.id}"
   username = "joakimej"
@@ -50,7 +56,6 @@ resource "github_team_membership" "husmas15" {
   username = "husmas15"
   role     = "member"
 }
-
 
 resource "github_team_membership" "Mr-Hagen" {
   team_id  = "${github_team.theclass.id}"
