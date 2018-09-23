@@ -26,7 +26,6 @@ resource "github_team_membership" "kleppa" {
   role     = "member"
 }
 
-
 resource "github_team_membership" "synend16" {
   team_id  = "${github_team.theclass.id}"
   username = "synend16"
@@ -42,6 +41,7 @@ resource "github_team_membership" "perness" {
   team_id = "${github_team.theclass.id}"
   username = "perness"
   role = "member"
+}
 
 
 resource "github_team_membership" "joakimej" {
@@ -77,8 +77,27 @@ resource "github_team_membership" "Mr-Hagen" {
   team_id  = "${github_team.theclass.id}"
   username = "Mr-Hagen"
 }
-resource "github_team_membership" "MarkusNyland" {
-  team_id  = "${github_team.theclass.id}"
-  username = "MarkusNyland"
-  role     = "member"
 
+resource "github_team_membership" "MarkusNyland" {
+  team_id = "${github_team.theclass.id}"
+  username = "MarkusNyland"
+  role = "member"
+}
+
+resource "github_team_membership" "gardos" {
+  team_id  = "${github_team.theclass.id}"
+  username = "gardos"
+  role     = "member"
+}
+
+resource "github_team_membership" "ellerish" {
+  team_id  = "${github_team.theclass.id}"
+  username = "ellerish"
+  role     = "member"
+}
+
+resource "github_team_membership" "kveola13" {
+  team_id  = "${github_team.theclass.id}"
+  username = "kveola13"
+  role     = "member"
+}
