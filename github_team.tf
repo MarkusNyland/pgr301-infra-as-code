@@ -21,6 +21,11 @@ resource "github_team_membership" "minimarker" {
   role     = "member"
 }
 
+
+resource "github_team_membership" "synend16" {
+  team_id  = "${github_team.theclass.id}"
+  username = "synend16"
+}
 resource "github_team_membership" "christianthorby" {
   team_id  = "${github_team.theclass.id}"
   username = "christianthorby"
@@ -37,7 +42,7 @@ resource "github_team_membership" "perness" {
 resource "github_team_membership" "joakimej" {
   team_id  = "${github_team.theclass.id}"
   username = "joakimej"
-
+}
 
 resource "github_team_membership" "Rosso" {
   team_id  = "${github_team.theclass.id}"
@@ -66,7 +71,7 @@ resource "github_team_membership" "husmas15" {
 resource "github_team_membership" "Mr-Hagen" {
   team_id  = "${github_team.theclass.id}"
   username = "Mr-Hagen"
-
+}
 resource "github_team_membership" "MarkusNyland" {
   team_id  = "${github_team.theclass.id}"
   username = "MarkusNyland"
