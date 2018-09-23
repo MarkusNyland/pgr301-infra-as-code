@@ -1,6 +1,6 @@
 #!/bin/sh
 
 export GITHUB_TOKEN="${github_token}"
-cd terraform
+cd source
 git add terraform.tfstate
 git commit -m"state change"
