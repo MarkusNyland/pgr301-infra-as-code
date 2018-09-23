@@ -12,6 +12,9 @@ jobs:
       command: apply
       directories: |
           .
+   - task: state_update
+     file: pgr301-infra-as-code/concourse/tasks/add-state-to-git/task.yml
+   - put: pgr301-infra-as-code
 
 resources:
 
