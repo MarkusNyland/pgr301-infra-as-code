@@ -22,6 +22,11 @@ resource "github_team_membership" "minimarker" {
 }
 
 
+resource "github_team_membership" "joakimej" {
+  team_id  = "${github_team.theclass.id}"
+  username = "joakimej"
+
+
 resource "github_team_membership" "Rosso" {
   team_id  = "${github_team.theclass.id}"
   username = "Rosso84"
