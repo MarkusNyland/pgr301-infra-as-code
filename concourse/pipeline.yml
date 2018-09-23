@@ -19,7 +19,7 @@ jobs:
     input_mapping: {source: pgr301-infra-as-code}
   - put: pgr301-infra-as-code
     params:
-      repository: bumped-source/
+      repository: modified-source
       rebase: true
 
 resources:
