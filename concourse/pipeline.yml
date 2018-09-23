@@ -13,6 +13,8 @@ jobs:
       directories: |
           .
   - task: state_update
+    params:
+      github_token: ((github_token))
     file: pgr301-infra-as-code/concourse/tasks/add-state-to-git/task.yml
   - put: pgr301-infra-as-code
 
