@@ -9,5 +9,8 @@ image_resource:
 inputs:
 - name: terraform
 
+params:
+  github_token: ((github_token))
+
 run:
   path: source/concourse/tasks/add-stage-to-git/terraform.sh
