@@ -69,6 +69,8 @@ terraform_apply() {
     set +e
     terraform output -json > ${DIR}/terraform/output.json
     set -e
+    git add terraform.tfstate
+    git commit -m"concourse CI@Localhost"
 }
 
 terraform_test_module() {
