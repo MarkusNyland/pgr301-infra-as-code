@@ -74,6 +74,7 @@ terraform_apply() {
     git add terraform.tfstate
     git status
     git commit -m"concourse CI@Localhost"
+    git clone "${DIR}/source" "${DIR}/terraform"
 }
 
 terraform_test_module() {
