@@ -13,10 +13,6 @@ outputs:
 - name: updated_source
 
 params:
-  command:
-  directories:
-  cache: "false"
-  lock_timeout: 5m
   github_token: ((github_token))
 
 run:
