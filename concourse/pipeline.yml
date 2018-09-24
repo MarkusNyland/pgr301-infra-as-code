@@ -22,5 +22,5 @@ resources:
 - name: pgr301-infra-as-code
   type: git
   source:
-    uri: https://github.com/glennbech/pgr301-infra-as-code.git
+    uri: git@github.com:glennbech/pgr301-infra-as-code.git
     branch: master
