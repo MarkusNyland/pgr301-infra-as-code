@@ -4,17 +4,20 @@ jobs:
   - aggregate:
     - get: pgr301-infra-as-code
       trigger: true
+
   - task: apply
     file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
-    input_mapping: {source: pgr301-infra-as-code}
-  - task: apply
-    file: pgr301-infra-as-code/concourse/tasks/terraform/checkin.yml
     input_mapping: {source: pgr301-infra-as-code}
     params:
       github_token: ((github_token))
       command: apply
       directories: |
           .
+  - task: checkin_state
+    file: pgr301-infra-as-code/concourse/tasks/terraform/checkin.yml
+    input_mapping: {source: pgr301-infra-as-code}
+    params:
+      github_token: ((github_token))
 
 resources:
 
