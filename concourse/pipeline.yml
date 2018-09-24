@@ -13,7 +13,7 @@ jobs:
       command: apply
       directories: |
           .
-  - put: privacy-aws
+  - put: pgr301-infra-as-code
     params:
       repository: with-state/
 resources:
