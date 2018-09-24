@@ -69,6 +69,8 @@ terraform_apply() {
     set +e
     terraform output -json > ${DIR}/terraform/output.json
     set -e
+    git config --global user.email "concourse-ci@localhost"
+    git config --global user.name "concourse-ci"
     git add terraform.tfstate
     git commit -m"concourse CI@Localhost"
 }
