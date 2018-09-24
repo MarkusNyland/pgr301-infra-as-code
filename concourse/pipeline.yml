@@ -15,7 +15,8 @@ jobs:
           .
   - put: pgr301-infra-as-code
     params:
-      repository: with-state/
+      repository: bumped-source/
+      rebase: true
 resources:
 
 - name: pgr301-infra-as-code
