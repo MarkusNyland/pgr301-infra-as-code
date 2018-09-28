@@ -4,7 +4,7 @@ resource "github_repository" "concourse_heroku" {
   private     = false
 }
 
-resource "github_repository" "concourse_heroku" {
+resource "github_repository" "concourse_heroku_app" {
   name        = "heroku_example-app"
   description = "Shows heroku with concourse"
   private     = false
