@@ -15,7 +15,7 @@ jobs:
           .
   - put: pgr301-infra-as-code
     params:
-      repository: bumped-source/
+      repository: with-state
       rebase: true
 resources:
 
@@ -24,3 +24,4 @@ resources:
   source:
     uri: git@github.com:glennbech/pgr301-infra-as-code.git
     branch: master
+    private_key: ((deploy_key))
