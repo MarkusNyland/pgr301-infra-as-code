@@ -1,4 +1,3 @@
-
 data "github_user" "glennbech" {
   username = "glennbech"
 }
@@ -25,6 +24,7 @@ resource "github_team_membership" "minimarker" {
   username = "minimarker"
   role     = "member"
 }
+
 resource "github_team_membership" "kleppa" {
   team_id  = "${github_team.theclass.id}"
   username = "kleppa"
@@ -43,11 +43,10 @@ resource "github_team_membership" "christianthorby" {
 }
 
 resource "github_team_membership" "perness" {
-  team_id = "${github_team.theclass.id}"
+  team_id  = "${github_team.theclass.id}"
   username = "perness"
-  role = "member"
+  role     = "member"
 }
-
 
 resource "github_team_membership" "joakimej" {
   team_id  = "${github_team.theclass.id}"
@@ -84,9 +83,9 @@ resource "github_team_membership" "Mr-Hagen" {
 }
 
 resource "github_team_membership" "MarkusNyland" {
-  team_id = "${github_team.theclass.id}"
+  team_id  = "${github_team.theclass.id}"
   username = "MarkusNyland"
-  role = "member"
+  role     = "member"
 }
 
 resource "github_team_membership" "gardos" {
@@ -105,8 +104,4 @@ resource "github_team_membership" "kveola13" {
   team_id  = "${github_team.theclass.id}"
   username = "kveola13"
   role     = "member"
-}
-
-output "glennbech" {
-  value = "${data.github_user.glennbech.avatar_url}}"
 }
